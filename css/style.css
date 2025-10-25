@@ -249,7 +249,7 @@ body {
     counter-reset: myCounter;
 }
 
-.how-does__item{
+.how-does__item {
     list-style-type: none;
     width: 270px;
     position: relative;
@@ -259,7 +259,7 @@ body {
     min-height: 63px;
 }
 
-.how-does__item + .how-does__item{
+.how-does__item + .how-does__item {
     margin-top: 40px;
 }
 
@@ -275,8 +275,54 @@ body {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    color:#ffffff;
+    color: #ffffff;
     position: absolute;
     left: 0;
     top: 0;
+}
+
+.video {
+    padding-bottom: 150px;
+}
+
+.video__title {
+    margin-bottom: 20px;
+}
+
+.video__text {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.video__content {
+    margin: 0 auto;
+    display: block;
+}
+
+.important {
+    padding-bottom: 150px;
+}
+
+.important__title {
+    margin-bottom: 20px;
+}
+
+.important__text {
+    max-width: 580px;
+    margin: 0 auto 50px;
+
+}
+
+.important__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.important__item{
+max-width: 270px;
+}
+
+.important__item-img {
+    margin-bottom: 20px;
 }
