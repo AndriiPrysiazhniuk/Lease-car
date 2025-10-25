@@ -89,7 +89,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: -100px 0 0 0;
+    /*margin: -100px 0 0 0;*/
 }
 
 .footer__menu {
@@ -219,12 +219,64 @@ body {
     margin-bottom: 30px;
 }
 
-.why-lease__item-title{
+.why-lease__item-title {
     margin-bottom: 30px;
     font-size: 24px;
     font-weight: 700;
 }
 
-.why-lease__item-text{
+.why-lease__item-text {
     text-align: left;
+}
+
+.how-does {
+    padding-bottom: 150px;
+}
+
+.how-does__inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.how-does__title {
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.how-does__list {
+    padding: 50px 0 70px;
+    counter-reset: myCounter;
+}
+
+.how-does__item{
+    list-style-type: none;
+    width: 270px;
+    position: relative;
+    margin-left: auto;
+    box-sizing: content-box;
+    padding: 19px 0 19px 240px;
+    min-height: 63px;
+}
+
+.how-does__item + .how-does__item{
+    margin-top: 40px;
+}
+
+.how-does__item::before {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: 700;
+    background-color: #0066ff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color:#ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
