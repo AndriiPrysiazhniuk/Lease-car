@@ -21,6 +21,13 @@ a {
     color: inherit;
 }
 
+.section-title {
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
 .wrapper {
     height: 100%;
     display: flex;
@@ -71,9 +78,9 @@ body {
     font-weight: 700;
 }
 
-.main {
-    padding: 0 0 100px
-}
+/*.main {*/
+/*    padding: 0 0 100px*/
+/*}*/
 
 .footer {
     background-color: #151515;
@@ -143,7 +150,7 @@ body {
     right: 0;
 }
 
-title {
+.title {
     padding-bottom: 40px;
     font-size: 96px;
     font-weight: 700;
@@ -160,7 +167,7 @@ title {
     font-weight: 700;
 }
 
-.swiper::after{
+.swiper::after {
     content: '';
     background-color: rgba(21, 21, 21, .3);
     position: absolute;
@@ -187,7 +194,7 @@ title {
     margin: 0 15px !important;
 }
 
-.swiper-pagination-bullets.swiper-pagination-horizontal{
+.swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 50px;
 }
 
@@ -195,4 +202,29 @@ title {
     height: 6px;
     background: #ffffff;
     border-radius: 0;
+}
+
+.why-lease {
+    padding: 150px 0;
+}
+
+.why-lease__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.why-lease__item-img {
+    margin-bottom: 30px;
+}
+
+.why-lease__item-title{
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.why-lease__item-text{
+    text-align: left;
 }
